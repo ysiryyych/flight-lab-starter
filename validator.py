@@ -78,7 +78,7 @@ def validate_row(fields: list[str], airports: set[str]) -> str | None:
     if arr is None:
         return "INVALID_ARRIVAL"
 
-    # 9. order of times
+  
     if arr <= dep:
         return "ARRIVAL_NOT_AFTER_DEPARTURE"
 
